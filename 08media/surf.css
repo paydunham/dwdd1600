@@ -1,0 +1,267 @@
+/* prevent problems with different browsers*/
+* {box-sizing: border-box;}
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Header here*/
+header {
+    background-color: #eaeaea;
+    padding: 1rem 2%;
+    display: flex;
+    align-items: center;
+}
+header div{
+    padding-left: 2vw;
+}
+header h1 {
+    margin: 0;
+    color: #73542f;
+}
+header p {
+    margin: 0;
+    color: #73542f;
+    letter-spacing: .5px;
+}
+
+/* SMALL screens*/
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2%;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #eaeaea;
+        color: #73542f;
+    }
+    nav .active a {
+        background-color: #B6D0E2;
+        background-image: linear-gradient(#B6D0E2, #95c2e1);
+        color: white;
+    } 
+} /*end of the media query*/
+
+/*BIG screens*/
+@media only screen and (min-width: 801px) {
+    nav {
+    background-color: #B6D0E2;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2%;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #73542f;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+} 
+nav li.active a {
+    background-color: #73542f;
+    color: #B6D0E2;
+}
+nav a:hover {
+    color: #fff;
+}
+} /*end of the media query*/
+
+
+/* Stuff for the main*/
+main {
+    padding: 1rem 2%;
+}
+main h1 {
+    color: #73542f;
+}
+main h2 {
+    color: black;
+    margin-bottom: .2rem;
+}
+main p {
+    color: black;
+    margin: 0 0 .3rem 0;
+}
+
+main ol {
+    padding: .5rem 3%;
+    background-color: #eaeaea;
+}
+
+main dl dt {
+    color: #B6D0E2;
+    font-weight: 700;
+}
+main dl dd {
+    color: black;
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type: circle;
+}
+main li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+     font-size: .9rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #B6D0E2;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #73542f;
+    border-radius: 5px;
+}
+
+main a {
+    color: #73542f;
+}
+main a:hover {
+    color: #B6D0E2;
+}
+.surfhero {
+    width: 100%;
+    margin: 0;
+}
+.surfhero img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figure:hover {
+    box-shadow: 0px 0px 10px black;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #73542f;
+}
+
+
+.myForm fieldset {
+    border: 1px solid #B6D0E2;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myForm legend {
+    background-color: #B6D0E2;
+    font-size: .8rem;
+    padding: 0 .5rem;
+    border-radius: 5px;
+}
+.myForm label {
+    margin: .5rem;
+}
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: rgba(115,84,47,0.1);
+}
+
+.myForm [type=submit] {
+    background-color: #B6D0E2;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin: 1rem 0 0 1vw;
+}
+
+table.our-lessons {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.our-lessons th {
+    background-color: #73542f;
+    color: white;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+table.our-lessons td {
+    padding: .4rem 2vw;
+}
+table.our-lessons tr:nth-child(odd) {
+    background-color: #eaeaea;
+}
+table.our-lessons tr:hover {
+    background-color: #B6D0E2;
+}
+
+
+/* Footer here */
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+    color: #73542f;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+footer a {
+    color: #73542f;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+
+
+
+
